@@ -1,0 +1,29 @@
+{
+	"name": "MydevDocker",
+	"dockerFile": "Dockerfile",
+	"forwardPorts": [ 7071 ],
+
+	"mounts": [
+		// Saves the bash terminal history between instances of the devcontainer
+		"type=volume,source=mydevcommandhistory,target=/root/commandhistory",
+	],
+
+	// Uncomment to use powershell as default terminal
+	// "settings": {
+	// 	"terminal.integrated.shell.linux": "/opt/microsoft/powershell/7/pwsh",
+	// },
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"ms-vsliveshare.vsliveshare-pack",
+		"hashicorp.terraform",
+		"DavidAnson.vscode-markdownlint",
+		"redhat.vscode-yaml",
+		"k--kato.docomment",
+		"amazonwebservices.aws-toolkit-vscode"
+	],
+
+	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
+	// "remoteUser": "vscode"
+
+}
