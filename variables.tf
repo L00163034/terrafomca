@@ -1,9 +1,9 @@
 variable "AccessKeyId" {
-  default = "AKIAWSBNZ53OBRZCAB5D"
+  default = "youraccesskey"
 }
 
 variable "SecretAccessKey" {
-  default = "lUvqTAnCzanfaZPnV1RyD4P1KL5TVMKBT+GVoeJS"
+  default = "YourSecretAccessKey"
 }
 
 variable "Region" {
