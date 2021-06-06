@@ -6,10 +6,6 @@ variable "SecretAccessKey" {
   default = "YourSecretAccessKey"
 }
 
-variable "bucketName" {
-  default = "YourBucketName"
-}
-
 variable "Region" {
   default = "eu-west-1"
 }
